@@ -1,0 +1,189 @@
+\hypertarget{class_main_window}{}\doxysection{Класс Main\+Window}
+\label{class_main_window}\index{MainWindow@{MainWindow}}
+
+
+Класс описывает логику работы основного окна  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+Граф наследования\+:Main\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_main_window}
+\end{center}
+\end{figure}
+\doxysubsection*{Сигналы}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_main_window_ab4f651aada11c28a59574557d89d01b7}{sent\+Id}} (QString id)
+\begin{DoxyCompactList}\small\item\em Сигнал для передачи id о выбранном тарифе в окно класса \char`\"{}\+Edit\+Window\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_main_window_a996c5a2b6f77944776856f08ec30858d}{Main\+Window}} (QWidget $\ast$parent=nullptr)
+\item 
+\mbox{\Hypertarget{class_main_window_a68860e2f40c1493acc1d9f818955ed64}\label{class_main_window_a68860e2f40c1493acc1d9f818955ed64}} 
+void \mbox{\hyperlink{class_main_window_a68860e2f40c1493acc1d9f818955ed64}{parse\+\_\+db}} ()
+\begin{DoxyCompactList}\small\item\em Метод для заполнения таблицы именами клиентов. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_ad3d11a68d673a12536d0a8a0c3a35b39}\label{class_main_window_ad3d11a68d673a12536d0a8a0c3a35b39}} 
+void \mbox{\hyperlink{class_main_window_ad3d11a68d673a12536d0a8a0c3a35b39}{clear\+\_\+info}} ()
+\begin{DoxyCompactList}\small\item\em Метод для очистки блока \char`\"{}Информация о тарифе\char`\"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_addfc60cf91faff32ebc3a488590c5a54}{parse\+\_\+info}} (int row)
+\begin{DoxyCompactList}\small\item\em Метод для заполнения блока \char`\"{}Информация о тарифе\char`\"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_adbc5e93470cf8db62b5787ef9b256b86}{enabled\+\_\+b}} (bool pos)
+\begin{DoxyCompactList}\small\item\em Метод для выключения/включения кнопок удаления/изменения клиента. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_ab371646d3fc95c004c9199059d1605e8}\label{class_main_window_ab371646d3fc95c004c9199059d1605e8}} 
+void \mbox{\hyperlink{class_main_window_ab371646d3fc95c004c9199059d1605e8}{parse\+\_\+tariff}} ()
+\begin{DoxyCompactList}\small\item\em Метод для вывода всех тарифов в таблицу. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_ae99886a3ef71fe36bd688206afb8c94d}{parse\+\_\+tariff}} (int row)
+\begin{DoxyCompactList}\small\item\em Метод для заполнения блока \char`\"{}Информация о тарифе\char`\"{}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a6866bf82957c991e372f77b831479165}\label{class_main_window_a6866bf82957c991e372f77b831479165}} 
+void \mbox{\hyperlink{class_main_window_a6866bf82957c991e372f77b831479165}{clear\+\_\+info\+\_\+tariff}} ()
+\begin{DoxyCompactList}\small\item\em Метод для очистки блока \char`\"{}Информация о тарифе\char`\"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a65853098afdeff94a5936abee351fcc7}{enabled\+\_\+b\+\_\+tariff}} (bool pos)
+\begin{DoxyCompactList}\small\item\em Метод для выключения/включения кнопок удаления/изменения тарифа. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a7e7977491a8b7dd99770554d7c4d8597}{close\+\_\+change\+\_\+tariff}} (bool pos)
+\begin{DoxyCompactList}\small\item\em Метод для контроля отображения блока смены тарифа. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a53af5f3e1536d6bc102757d16e651ec4}{close\+\_\+change\+\_\+date}} (bool pos)
+\begin{DoxyCompactList}\small\item\em Метод для контроля отображения блока продления тарифа. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a3dcbebf80a40a787317d5a2f3c0c04bb}\label{class_main_window_a3dcbebf80a40a787317d5a2f3c0c04bb}} 
+void \mbox{\hyperlink{class_main_window_a3dcbebf80a40a787317d5a2f3c0c04bb}{is\+Changed}} ()
+\begin{DoxyCompactList}\small\item\em Метод для проверки на возможность продления тарифа. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_aca98e40275247e3fabd0d43d617c7b8b}{FIO\+\_\+phone\+\_\+readonly}} (bool pos)
+\begin{DoxyCompactList}\small\item\em Метод для контроля возможности редактирования полей \char`\"{}тел.\char`\"{} и \char`\"{}ФИО\char`\"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a9574cd161396ab36df75fb7497479e34}{search}} (const QString \&arg1)
+\begin{DoxyCompactList}\small\item\em Метод для поиска по подстроке. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс описывает логику работы основного окна 
+
+Основное окно содержит 2 вкладки\+: для работы с клиентами и для работы с услугами/тарифами. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_main_window_a996c5a2b6f77944776856f08ec30858d}\label{class_main_window_a996c5a2b6f77944776856f08ec30858d}} 
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{MainWindow()}{MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+Конструктор принимает родительский класс. 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_main_window_a53af5f3e1536d6bc102757d16e651ec4}\label{class_main_window_a53af5f3e1536d6bc102757d16e651ec4}} 
+\index{MainWindow@{MainWindow}!close\_change\_date@{close\_change\_date}}
+\index{close\_change\_date@{close\_change\_date}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{close\_change\_date()}{close\_change\_date()}}
+{\footnotesize\ttfamily void Main\+Window\+::close\+\_\+change\+\_\+date (\begin{DoxyParamCaption}\item[{bool}]{pos }\end{DoxyParamCaption})}
+
+
+
+Метод для контроля отображения блока продления тарифа. 
+
+Параметры\+:
+
+pos -\/ true (не отображать) / false (отображать). \mbox{\Hypertarget{class_main_window_a7e7977491a8b7dd99770554d7c4d8597}\label{class_main_window_a7e7977491a8b7dd99770554d7c4d8597}} 
+\index{MainWindow@{MainWindow}!close\_change\_tariff@{close\_change\_tariff}}
+\index{close\_change\_tariff@{close\_change\_tariff}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{close\_change\_tariff()}{close\_change\_tariff()}}
+{\footnotesize\ttfamily void Main\+Window\+::close\+\_\+change\+\_\+tariff (\begin{DoxyParamCaption}\item[{bool}]{pos }\end{DoxyParamCaption})}
+
+
+
+Метод для контроля отображения блока смены тарифа. 
+
+Параметры\+:
+
+pos -\/ true (не отображать) / false (отображать). \mbox{\Hypertarget{class_main_window_adbc5e93470cf8db62b5787ef9b256b86}\label{class_main_window_adbc5e93470cf8db62b5787ef9b256b86}} 
+\index{MainWindow@{MainWindow}!enabled\_b@{enabled\_b}}
+\index{enabled\_b@{enabled\_b}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{enabled\_b()}{enabled\_b()}}
+{\footnotesize\ttfamily void Main\+Window\+::enabled\+\_\+b (\begin{DoxyParamCaption}\item[{bool}]{pos }\end{DoxyParamCaption})}
+
+
+
+Метод для выключения/включения кнопок удаления/изменения клиента. 
+
+Параметры\+:
+
+pos -\/ true (включить) / false (выключить). \mbox{\Hypertarget{class_main_window_a65853098afdeff94a5936abee351fcc7}\label{class_main_window_a65853098afdeff94a5936abee351fcc7}} 
+\index{MainWindow@{MainWindow}!enabled\_b\_tariff@{enabled\_b\_tariff}}
+\index{enabled\_b\_tariff@{enabled\_b\_tariff}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{enabled\_b\_tariff()}{enabled\_b\_tariff()}}
+{\footnotesize\ttfamily void Main\+Window\+::enabled\+\_\+b\+\_\+tariff (\begin{DoxyParamCaption}\item[{bool}]{pos }\end{DoxyParamCaption})}
+
+
+
+Метод для выключения/включения кнопок удаления/изменения тарифа. 
+
+Параметры\+:
+
+pos -\/ true (включить) / false (выключить). \mbox{\Hypertarget{class_main_window_aca98e40275247e3fabd0d43d617c7b8b}\label{class_main_window_aca98e40275247e3fabd0d43d617c7b8b}} 
+\index{MainWindow@{MainWindow}!FIO\_phone\_readonly@{FIO\_phone\_readonly}}
+\index{FIO\_phone\_readonly@{FIO\_phone\_readonly}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{FIO\_phone\_readonly()}{FIO\_phone\_readonly()}}
+{\footnotesize\ttfamily void Main\+Window\+::\+FIO\+\_\+phone\+\_\+readonly (\begin{DoxyParamCaption}\item[{bool}]{pos }\end{DoxyParamCaption})}
+
+
+
+Метод для контроля возможности редактирования полей \char`\"{}тел.\char`\"{} и \char`\"{}ФИО\char`\"{}. 
+
+Параметры\+:
+
+pos -\/ true (нельзя редактировать) / false (можно редактировать). \mbox{\Hypertarget{class_main_window_addfc60cf91faff32ebc3a488590c5a54}\label{class_main_window_addfc60cf91faff32ebc3a488590c5a54}} 
+\index{MainWindow@{MainWindow}!parse\_info@{parse\_info}}
+\index{parse\_info@{parse\_info}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{parse\_info()}{parse\_info()}}
+{\footnotesize\ttfamily void Main\+Window\+::parse\+\_\+info (\begin{DoxyParamCaption}\item[{int}]{row }\end{DoxyParamCaption})}
+
+
+
+Метод для заполнения блока \char`\"{}Информация о тарифе\char`\"{}. 
+
+Параметры\+:
+
+row -\/ номер строки с клиентом, для которого нужно вывести информацию. \mbox{\Hypertarget{class_main_window_ae99886a3ef71fe36bd688206afb8c94d}\label{class_main_window_ae99886a3ef71fe36bd688206afb8c94d}} 
+\index{MainWindow@{MainWindow}!parse\_tariff@{parse\_tariff}}
+\index{parse\_tariff@{parse\_tariff}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{parse\_tariff()}{parse\_tariff()}}
+{\footnotesize\ttfamily void Main\+Window\+::parse\+\_\+tariff (\begin{DoxyParamCaption}\item[{int}]{row }\end{DoxyParamCaption})}
+
+
+
+Метод для заполнения блока \char`\"{}Информация о тарифе\char`\"{}. 
+
+Параметры\+:
+
+row -\/ номер строки с тарифом, для которого нужно вывести информацию. \mbox{\Hypertarget{class_main_window_a9574cd161396ab36df75fb7497479e34}\label{class_main_window_a9574cd161396ab36df75fb7497479e34}} 
+\index{MainWindow@{MainWindow}!search@{search}}
+\index{search@{search}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily void Main\+Window\+::search (\begin{DoxyParamCaption}\item[{const QString \&}]{arg1 }\end{DoxyParamCaption})}
+
+
+
+Метод для поиска по подстроке. 
+
+Параметры\+:
+
+arg1 -\/ подстрока, по которой осуществляется поиск. \mbox{\Hypertarget{class_main_window_ab4f651aada11c28a59574557d89d01b7}\label{class_main_window_ab4f651aada11c28a59574557d89d01b7}} 
+\index{MainWindow@{MainWindow}!sentId@{sentId}}
+\index{sentId@{sentId}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{sentId}{sentId}}
+{\footnotesize\ttfamily void Main\+Window\+::sent\+Id (\begin{DoxyParamCaption}\item[{QString}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Сигнал для передачи id о выбранном тарифе в окно класса \char`\"{}\+Edit\+Window\char`\"{}. 
+
+Параметры\+:
+
+id -\/ primary key для идентификации конкретного тарифа. 
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Course\+Work/gym/asd/mainwindow.\+h\item 
+D\+:/\+Course\+Work/gym/asd/mainwindow.\+cpp\end{DoxyCompactItemize}

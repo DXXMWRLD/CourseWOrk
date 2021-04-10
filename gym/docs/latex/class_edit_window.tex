@@ -1,0 +1,63 @@
+\hypertarget{class_edit_window}{}\doxysection{Класс Edit\+Window}
+\label{class_edit_window}\index{EditWindow@{EditWindow}}
+
+
+Класс описывает логику работы с окном редактирования тарифа  
+
+
+
+
+{\ttfamily \#include $<$editwindow.\+h$>$}
+
+Граф наследования\+:Edit\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_edit_window}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые слоты}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_edit_window_a751129f70d7f29c4b39c3cc562d68d52}{recieve\+Id}} (QString id)
+\begin{DoxyCompactList}\small\item\em Слот для получения информации о выбранном тарифе. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_edit_window_a39a89944c117acac0419345f0a557528}{Edit\+Window}} (QWidget $\ast$parent=nullptr)
+\item 
+\mbox{\Hypertarget{class_edit_window_a1380ccc001239cfd2258dc0988d5a8ef}\label{class_edit_window_a1380ccc001239cfd2258dc0988d5a8ef}} 
+void \mbox{\hyperlink{class_edit_window_a1380ccc001239cfd2258dc0988d5a8ef}{parse\+\_\+serv}} ()
+\begin{DoxyCompactList}\small\item\em Метод для считывания данных об услугах из базы данных и переноса их в таблицу. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс описывает логику работы с окном редактирования тарифа 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_edit_window_a39a89944c117acac0419345f0a557528}\label{class_edit_window_a39a89944c117acac0419345f0a557528}} 
+\index{EditWindow@{EditWindow}!EditWindow@{EditWindow}}
+\index{EditWindow@{EditWindow}!EditWindow@{EditWindow}}
+\doxysubsubsection{\texorpdfstring{EditWindow()}{EditWindow()}}
+{\footnotesize\ttfamily Edit\+Window\+::\+Edit\+Window (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Конструктор принимает родительский класс. 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_edit_window_a751129f70d7f29c4b39c3cc562d68d52}\label{class_edit_window_a751129f70d7f29c4b39c3cc562d68d52}} 
+\index{EditWindow@{EditWindow}!recieveId@{recieveId}}
+\index{recieveId@{recieveId}!EditWindow@{EditWindow}}
+\doxysubsubsection{\texorpdfstring{recieveId}{recieveId}}
+{\footnotesize\ttfamily void Edit\+Window\+::recieve\+Id (\begin{DoxyParamCaption}\item[{QString}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Слот для получения информации о выбранном тарифе. 
+
+Параметры\+:
+
+id -\/ primary key для идентификации конкретного тарифа. 
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Course\+Work/gym/asd/editwindow.\+h\item 
+D\+:/\+Course\+Work/gym/asd/editwindow.\+cpp\end{DoxyCompactItemize}
